@@ -1,0 +1,170 @@
+.gotit a{
+    text-decoration: none;
+    }
+    .flex-buttons{
+      display: flex;
+    }
+    .btn {
+        width: 200px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+        margin: 20px;
+        height: 55px;
+        text-align:center;
+        border: none;
+        background-size: 300% 100%;
+        text-decoration: none;
+        padding:10px;
+
+        border-radius: 50px;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+    .btn.btn-gotit{
+      background-image: linear-gradient(to left, #0bfcbb, #409cde, #4f01bf, #b62ba0);
+      box-shadow: -2px 4px 15px 0 rgba(0, 41, 255, 0.75);
+    }
+    .btn-gotit:hover{
+        background-position: 100% 0;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+    .btn.btn-notgotit{
+      color:rgb(242, 125, 17);
+      border: 1px solid;
+      border-color:rgb(242, 125, 17);
+      /* border-radius: 0px; */
+    }
+    .btn.btn-notgotit:hover, .btn.btn-notgotit:focus{
+      box-shadow:
+        inset -4em 0 0 0 rgb(3, 138, 89),
+        inset 4em 0 0 0 rgb(3, 138, 89);
+        transition: 0.25s;
+    }
+
+    .btn.btn-pulse{
+      color:rgb(242, 17, 17);
+      border: 1px solid;
+      border-color:rgb(242, 17, 17);
+      box-shadow: 0 0 0 2em rgba(#ff0000, 0);
+    }
+    .btn.btn-pulse:hover,
+    .btn.btn-pulse:focus{
+      animation: pulse 2s;
+      box-shadow: 0 0 0 2em rgba(#fff,0);
+      /* box-shadow: 0 0 20px 2em rgb(218, 93, 93); */
+      /* transition: 1s; */
+    }
+
+    @keyframes pulse {
+      from { box-shadow: 0 0 0 0 rgb(218, 93, 93); }
+      50% { box-shadow: 0 0 20px 2em rgb(218, 93, 93);}
+      to {box-shadow: 0 0 100px 5em rgb(218, 93, 93,0); }
+    }
+    .btn.btn-notpulse{
+      color:rgb(17, 242, 73);
+      border: 1px solid;
+      border-color:rgb(17, 242, 73);
+    }
+.btn.btn-notpulse:hover,
+.btn.btn-notpulse:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em rgb(186, 255, 0);
+  transform: translateY(-0.25em);
+  transition: 0.25s;
+}
+
+.container {
+    /* transform: translate(-50%, -50%); */
+    display: flex;
+    margin-top: 3em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .center {
+    width: 180px;
+    height: 60px;
+    position: absolute;
+  }
+
+  .mainbtn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #91C9FF;
+    outline: none;
+    transition: 1s ease-in-out;
+  }
+
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #ff00cf;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+  }
+
+  .mainbtn:hover {
+    transition: 1s ease-in-out;
+    background: #4F95DA;
+  }
+
+  .mainbtn:hover svg {
+    stroke-dashoffset: -480;
+  }
+
+  .mainbtn span {
+    color: rgb(0, 56, 64);
+    font-size: 18px;
+    font-weight: 100;
+  }
+  .mainbtn:hover span{
+    color:azure;
+  }
+
+  .good-btn{
+      z-index: 1;
+      text-align: center;
+      height: 3em;
+      /* min-height: 2em; */
+      background: #8dacbb;
+      padding: 0.5em;
+      border-radius: 13px;
+      /*box-shadow: -1px 3px 10px #495c90; /* вдавливание */
+      box-shadow: 5px 5px 0px rgb(65, 32, 130);
+      border: 1px solid black;
+      transition:  box-shadow 1s ease-in-out;
+      text-shadow: -1px 1px 5px black;
+  }
+  .good-btn:hover{
+      background-color: #6e8de2;
+      text-decoration:none;
+      display: inline-block;
+      transition: 0.2s ease-in-out;
+      /* box-shadow: 0px 0px 5px rgb(114, 100, 142),
+      0px 0px 5px #495c90 inset; */
+      /*box-shadow:5px 5px 0px rgb(65, 32, 130,0.9) inset;
+      /*0px 0px 1px #3a0f4e inset;  /* вдавливание*/
+      transform: translateX(2%) translateY(2%);
+      animation: D4_buton .2s;
+      animation-fill-mode: forwards;
+  }
+  @keyframes D4_buton{
+    from { box-shadow: 5px 5px 0px rgb(65, 32, 130);}
+    50% {box-shadow: 5px 5px 0px rgb(65, 32, 130,0.5),
+      5px 5px 0px rgb(65, 32, 130,0.5) inset;
+    }
+    to {
+      box-shadow:5px 5px 0px rgb(65, 32, 130,0.7) inset;
+    }
+  }

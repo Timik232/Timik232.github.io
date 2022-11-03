@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <link rel="icon" href="cameraicon.png" sizes="any">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/contacts.css">
+  </head>
+  <body>
+    <div class="background">
+      <header class="shapka">
+          <div class="shapka__logo">
+              <div class="image__logo">
+                  <img src="images/camera.png" usemap="#Logo" alt="Логотип сайта">
+                  <map name="Logo">
+                      <area shape="rectangle" coords="0,0,100,100" href="main.html"></area>
+                  </map>
+              </div>
+              <div class="logotext">
+              Комолов Тимур
+              </div>
+          </div>
+          <nav class="navbar">
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+            <div class="menu-label">Меню</div>
+            </label>
+              <div class="shapka__blocks">
+                  <ul class="elements">
+                      <li><a href="main.html">
+                          <div class="shapka__blocks__item">
+                              Главная
+                          </div>
+                      </a>
+                      </li>
+                      <li><a href="aboutme.html">
+                          <div class="shapka__blocks__item">
+                              Обо мне
+                          </div>
+                      </a>
+                      </li>
+                      <li><a href="series.html">
+                          <div class="shapka__blocks__item">
+                              Серии фото
+                          </div>
+                      </a>
+                      </li>
+                      <li><a href="photoreports.html">
+                          <div class="shapka__blocks__item">
+                              Репортажка
+                          </div>
+                      </a>
+                      </li>
+                      <li><a href="phototerm.html">
+                          <div class="shapka__blocks__item">
+                              Термины
+                          </div>
+                      </a>
+                      </li>
+                      <li><a  href="contacts.html">
+                          <div class="shapka__blocks__item">
+                              Контакты
+                          </div>
+                      </a>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      </header>
+        <main class="main__contact">
+
+            <div class="textbox">
+                <div class="text__contact">
+                    <article class="contact__text">
+                      <h1>Контакты</h1>
+                      <br>
+                      <ul>
+                        <li><adress class="vkid"><a href="https://vk.com/timik232">Страница ВК </a></adress></li>
+                        <li><a href="https://www.instagram.com/ser13volk/">Инстаграм</a></li>
+                        <li>Моя почта: <a href="mailto:komolov.timurka@mail.ru">komolov.timurka@mail.ru</a></li>
+                      </ul><br>
+                      <div class="color"></div>
+                      <div class="color"></div>
+                      <div class="color"></div>
+                      <div class="box">
+                        <div class="square" style="--i:0;"></div>
+                        <div class="square" style="--i:1;"></div>
+                        <div class="square" style="--i:2;"></div>
+                        <div class="square" style="--i:3;"></div>
+                        <div class="square" style="--i:4;"></div>
+                        <div class="square" style="--i:5;"></div>
+                      </div>
+                      <form action="" method="get" class="sendMessage">
+                        <fieldset id="send">
+                          <legend id="legsend"><h2>Отправить письмо</h2></legend>
+                          <div class="grid__input">
+                          <span class="grid__column">
+                            <label for="name">Имя и фамилия</label>
+                          <div class="inp"><input type="text" id="name"  required minlength="3" placeholder="Тимур Комолов"></div>
+                         <label for="mail">Email</label>
+                          <div class="inp"><input type="email" name="mail" id="mail" placeholder="komolov.timurka@mail.ru" required minlength="4"></div>
+                        </span>
+                          <span class="grid__column">
+                            <label for="phone">Номер телефона(необязательно):</label>
+                          <div class="inp"><input type="tel" name="phone" id="phone" placeholder="+7-900-000-00-00"></div>
+                          <label for="vk">Ссылка на вк (необязательно):</label>
+                          <div class="inp"><input type="url" name="vk" id="vk" placeholder="https://vk.com/timik232"></div>
+                        </span>
+                        </div>
+                          <label for="tovk">Отвечать в вк?   </label>
+                          <input type="checkbox" name="tovk" id="tovk"><br>
+                          <label for="message">Сообщение</label>
+                          <div class="inp"><textarea id="message" name="message" placeholder="Введите сообщение" rows="10" cols="70" required minlength="10" maxlength="5000"></textarea></div>
+                          <label for="purpose">Тема сообщения</label><br>
+                          <select name="topic" id="topic" autofocus required>
+                            <option value="">Выберите тему сообщения</option>
+                            <option value="question">Задать вопрос</option>
+                            <option value="photo">Заказать съёмку</option>
+                            <option value="opinion">Спросить совета</option>
+                            <option value="other">Другое</option>
+                          </select><br>
+                          <button type="submit">Отправить</button>
+                        </fieldset>
+                      </form>
+                    </article>
+                </div>
+            </div>
+        </main>
+        <footer class="dungeon">
+          <div class="dungeon__text">
+              <p><address><a href="https://vk.com/timik232"></address>©Комолов Тимур</a>, 2022 <sub id="verysmall">ttt</sub>™
+              <span class="social__icon" id="vk_ref">
+                <a href="https://vk.com/timik232">
+              <img src="images/vk.svg" height="32px" alt="vk_icon">
+            </a>
+          </span>
+              <span class="social__icon" id="insta">
+                <a href="https://www.instagram.com/ser13volk/">
+              <img src="images/instagram.svg" height="32px" alt="instagram_icon">
+            </a>
+          </span>
+              <span class="social__icon" id="telegram_prof">
+                <a href="https://t.me/ser13volk">
+              <img src="images/telegram.svg" height="32px" alt="telegram_icon">
+            </a>
+          </span>
+          </p>
+        </div>
+        </footer>
+    </div>
+  </body>
+  </html>
