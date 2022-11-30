@@ -263,9 +263,7 @@ fieldset{
 .dungeon{
   background: rgb(22, 20, 99);
 }
-.dungeon__text{
-  transform: translateY(+40%);
-}
+
 #insta img{
   filter: invert();
 }
@@ -335,7 +333,7 @@ fieldset{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    
+
 }
 
 .vk-style{

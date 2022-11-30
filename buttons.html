@@ -35,7 +35,6 @@
             <a href="#" class="btn btn-pulse">Пульсируй</a>
             <a href="#" class="btn btn-notpulse">Не пульсируй</a>
             <a href="#" class="good-btn"> Красиво </a>
-
             <button id="like">❤</button>
             <button id="tolog">Log in</button>
             <button id="admin">Admin panel</button>
@@ -77,9 +76,43 @@
               <polyline points="199,1 199,99 1,99 1,1 199,1" class="hl-line" />
               <p>delete some text</p></button>
           </div>
+          <div class="trash">
+            <div class="trash__menu">
+              <button id="sort" onclick="sortButton();">
+                Отсортировать
+               </button>
+               <fieldset id="filtr">
+               <button id="filter" onclick="filterButton();">
+                 Фильтр
+                </button>
+                <label for="less">Меньше, чем:</label>
+              <div class="inp"><input type="tel" name="less" id="less"></div>
+              <label for="more">Больше, чем:</label>
+
+              <div class="inp"><input type="tel" name="more" id="more"></div>
+            </fieldset>
+              <div class="delete">
+                <img src="images/trash.svg" alt="trash" height=48px class="clear__this">
+              </div>
+            </div>
+          <div class="trash__el">
+            <div class="trash__text">
+            </div>
+            <div class="trash__cost">
+          </div>
+          <div class="clear">
+          </div>
       </div>
-      <label for="login">login:</label>
-      <input type="url" name="login" id="login" placeholder="login">
+      <div class="result__container">
+        <div>Сумма: <span id="result">0</span></div>
+      <div></div>
+      </div>
+    </div>
+    <div class="counter">
+      <button id="stop">Количество уведомлений:</button>
+      <span id="notif">0</span>
+    </div>
+
       <script src="js/login.js"></script>
         </main>
     </div>

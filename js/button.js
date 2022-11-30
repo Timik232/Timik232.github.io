@@ -3,8 +3,10 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("upHere").style.display = "block";
+        document.getElementById("upHere").style.opacity = 1;
     } else {
         document.getElementById("upHere").style.display = "none";
+        document.getElementById("upHere").style.opacity = 0;
     }
 }
 
