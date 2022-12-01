@@ -4,6 +4,9 @@
   align-items: center;
   flex-direction: row;
 }
+.main{
+  margin-bottom: 2.5em;
+}
 .series img{
   min-height:10em;
   max-height: 30vw;
@@ -43,8 +46,13 @@
 /* .series li:hover a{
   filter: blur(10px);
 } */
-@media screen and (min-width:800px){
+@media screen and (min-width:801px){
   .series img{
     height:15vw;
+  }
+}
+@media screen and (max-width:800px){
+  .main{
+    margin-bottom: 0;
   }
 }
