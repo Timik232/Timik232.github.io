@@ -204,6 +204,12 @@ fieldset{
   .box .square:nth-child(2){
     visibility: hidden;
   }
+  .box .square:nth-child(4){
+    visibility:hidden;
+  }
+  .box .square:nth-child(5){
+    visibility:hidden;
+  }
   .grid__input{
     grid-template-columns: repeat(1,1fr);
   }
@@ -282,7 +288,9 @@ fieldset{
     overflow: hidden;
     position: relative;
 }
-
+.navbar{
+  z-index: 4;
+}
 .logo{
     position:absolute;
     width: 100%;
