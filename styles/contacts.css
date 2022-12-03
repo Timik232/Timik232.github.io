@@ -12,7 +12,9 @@
   line-height: 1.6em;
   box-shadow: -3px 5px 10px rgb(2, 50, 79);
   z-index: 2;
+
 }
+
 ::placeholder{
   color:rgba(0,0,0,0.6);
 }
@@ -286,16 +288,13 @@ fieldset{
     width: 10vmin;
     border-radius: 100vmax;
 }
-.navbar{
-  z-index: 4;
-}
 .glow{
     width: 10vmin;
     aspect-ratio: 1;
     border-radius: 100vmax;
     background-color: black;
     position: absolute;
-    filter: blur(5px);
+    filter: blur(10px);
     z-index: 1;
 }
 
@@ -317,4 +316,9 @@ fieldset{
 }
 #turnoff:hover{
   background: rgba(255, 255, 255, 0.4);
+}
+@media screen and (max-width:365px){
+  .textbox{
+    overflow: scroll;
+  }
 }

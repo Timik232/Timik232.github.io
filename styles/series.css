@@ -1,8 +1,9 @@
 .series{
   /* display: flex; */
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
+  width: auto;
 }
 .main{
   margin-bottom: 2.5em;
@@ -16,12 +17,12 @@
 .series ul{
   padding: 0;
   margin: 0 auto;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .series li{
     display: inline-block;
     list-style-type: none;
-    justify-content: space-between;
+    justify-content: space-around;
     -webkit-transition: -webkit-transform 0.5s ease-in;
     transition: transform 0.5s ease-in;
   }
@@ -125,7 +126,6 @@ figure.effect-text-two figcaption::before {
 }
 figure.effect-text-two p {
 	position: absolute;
-
 	left: 0;
 	width: 100%;
 	color: var(--textcol) !important;
@@ -185,8 +185,6 @@ figure.effect-text-two:hover p {
 --grad: rgba(35, 37, 59, 0.7);
 }
 
-
-
 /* .series li:hover a{
   filter: blur(10px);
 } */
@@ -199,6 +197,13 @@ figure.effect-text-two:hover p {
   .main{
     margin-bottom: 0;
   }
+  @media screen and (max-width:365px){
+    .series{
+      overflow: scroll;
+    }
+  }
+
+
   figure.effect-text-two p{
     opacity: 1;
     -webkit-transform: translate3d(0,10px,0);

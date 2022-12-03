@@ -7,7 +7,7 @@
   <link rel="icon" href="cameraicon.png" sizes="any">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Oswald&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="styles/series.css">
+  <link rel="stylesheet" href="styles/serie__element.css">
   </head>
   <body>
     <div class="background">
@@ -73,13 +73,30 @@
         </header>
         <main class="main">
           <article>
-            
+            <div class="itc-slider" data-slider="itc-slider">
+            <div class="itc-slider__wrapper">
+              <div class="itc-slider__items">
+                <div class="itc-slider__item">
+                  <img src="images/pigeon.jpg"  width=460px alt="pigeon">
+                </div>
+                <div class="itc-slider__item">
+                  <img src="images/pigeon.jpg"  width=460px alt="pigeon">
+                </div>
+                <div class="itc-slider__item">
+                  <img src="images/pigeon.jpg"  width=460px alt="pigeon">
+                </div>
+              </div>
+            </div>
+            <button class="itc-slider__btn itc-slider__btn_prev"></button>
+            <button class="itc-slider__btn itc-slider__btn_next"></button>
+          </div>
             </article>
         </main>
         <aside id="upHere__container">
             <button onclick="topFunction()" id="upHere" title="Go to top">↑</button>
         </aside>
         <script src="js/button.js"></script>
+        <script src="/js/photoslider.js" defer></script>
         <footer class="dungeon">
             <div class="dungeon__text">
                 <span>

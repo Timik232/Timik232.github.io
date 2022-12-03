@@ -53,6 +53,7 @@
       grid-template-columns: 100px auto;
       /* overflow: scroll; */
       font-size: 14px;
+      overflow: scroll;
   }
 
 }
