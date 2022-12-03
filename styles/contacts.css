@@ -284,48 +284,11 @@ fieldset{
 }
 .circle{
     width: 10vmin;
-    aspect-ratio: 1;
     border-radius: 100vmax;
-    background-color: rgb(38, 41, 44);
-    overflow: hidden;
-    position: relative;
 }
 .navbar{
   z-index: 4;
 }
-.logo{
-    position:absolute;
-    width: 100%;
-    height: 100%;
-
-    background-image: var(--logo-url);
-    background-size: 65%;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 3;
-    filter: invert();
-}
-
-.moving-gradient{
-    position:absolute;
-    background-image: linear-gradient(var(--color1),var(--color2));
-    width: 100%;
-    height: 100%;
-    top:100%;
-    z-index: 2;
-    transition: all 0.5s;
-}
-
-.circle:hover > .moving-gradient{
-    top:0;
-}
-
-.circle:hover + .glow{
-    opacity: 1;
-    background-color: white;
-    filter: blur(15px);
-}
-
 .glow{
     width: 10vmin;
     aspect-ratio: 1;
@@ -334,17 +297,9 @@ fieldset{
     position: absolute;
     filter: blur(5px);
     z-index: 1;
-    opacity: 0.2;
-    transition: all 0.5s;
 }
 
-.social-media-button{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
 
-}
 #turnoff{
   min-width: 3em;
   max-width: 50vw;
@@ -362,29 +317,4 @@ fieldset{
 }
 #turnoff:hover{
   background: rgba(255, 255, 255, 0.4);
-}
-.vk-style{
-    --color1: rgb(0, 217, 255);
-    --color2: rgb(20, 5, 223);
-    --logo-url: url(../images/VK_Logo.png);
-}
-.instagram-style{
-    --color1: rgb(255, 123, 0);
-    --color2: rgb(223, 5, 132);
-    --logo-url: url(../images/insta.png);
-}
-.telegram-style{
-    --color1: rgb(49, 253, 192);
-    --color2: rgb(32, 126, 202);
-    --logo-url: url(../images/tg.png);
-}
-.github-style{
-    --color1: rgb(68, 0, 255);
-    --color2: rgb(9, 0, 24);
-    --logo-url: url(../images/gh.png);
-}
-.youtube-style{
-    --color1: rgb(255, 0, 0);
-    --color2: rgb(122, 0, 0);
-    --logo-url: url(../images/yt.png);
 }
