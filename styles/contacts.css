@@ -270,9 +270,6 @@ fieldset{
   height: 60px;
   z-index:1;
 }
-.dungeon{
-  background: rgb(22, 20, 99);
-}
 
 #insta img{
   filter: invert();

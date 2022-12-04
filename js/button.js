@@ -1,7 +1,7 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
         document.getElementById("upHere").style.display = "block";
         document.getElementById("upHere").style.opacity = 1;
     } else {

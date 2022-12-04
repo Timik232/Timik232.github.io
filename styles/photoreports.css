@@ -12,7 +12,9 @@
 .reports ul{
   padding: 0;
   margin: 0 auto;
-  justify-content: center;
+  justify-content:space-around;
+  display: flex;
+  flex-wrap: wrap;
 }
 .reports li{
     display: inline-block;
@@ -21,9 +23,6 @@
     -webkit-transition: -webkit-transform 0.5s ease-in;
     transition: transform 0.5s ease-in;
   }
-.reports li:not(:last-child){
-  margin-right: 1em;
-}
 .reports img{
   min-height:8em;
   max-height: 30vw;

@@ -70,6 +70,8 @@ a:hover { text-decoration: underline; }
 
 
 .background{
+    display: flex;
+    flex-direction: column;
     width:100%;
     min-height:100vh;
     background: linear-gradient(180deg,#c7edff,rgba(255,255,255,0) 100%), #ebf0ff;
@@ -308,9 +310,6 @@ a:hover { text-decoration: underline; }
   justify-content: end;
 }
 .additional{
-
-
-
   /* display: block; */
   /* position: sticky; */
   float:right;
@@ -408,9 +407,9 @@ a:hover { text-decoration: underline; }
   /* padding-bottom: 2.3em; */
   /* height: 10px; */
   left: 0;
-  /* bottom: 0; */
+  bottom: 0;
   text-align: left;
-  position: absolute;
+  position: relative;
   width:100%;
   white-space: nowrap;
 }
