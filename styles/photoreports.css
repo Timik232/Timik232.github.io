@@ -29,6 +29,10 @@
   width: auto;
   border-radius: 1em;
 }
+.hover-text-one figure p {
+  font-size: 100%;
+  font-weight: 550;
+}
 .main{
   margin-bottom: 2.5em;
 }
