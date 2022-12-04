@@ -7,7 +7,7 @@
   <link rel="icon" href="cameraicon.png" sizes="any">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Oswald&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="styles/series.css">
+  <link rel="stylesheet" href="styles/serie__element.css">
   </head>
   <body>
     <div class="background">
@@ -73,13 +73,22 @@
         </header>
         <main class="main">
           <article>
-
+            <div class="slider" id="main-slider">
+              <div class="slider-wrapper">
+              		<img src="images/serie4/cat 1.jpg" alt="cat1" class="slide"/>
+              		<img src="images/serie4/cat 2.jpg" alt="cat2" class="slide"/>
+              		<img src="images/serie4/cat 3.jpg" alt="cat3" class="slide"/>
+                  <img src="images/serie4/cat 4.jpg" alt="cat4" class="slide"/>
+                  <img src="images/serie4/cat 5.jpg" alt="cat5" class="slide"/>
+              	</div>
+                <div class="slider-nav">
+              		<button class="slider-previous">Previous</button>
+              		<button class="slider-next">Next</button>
+              	</div>
+              </div>
             </article>
         </main>
-        <aside id="upHere__container">
-            <button onclick="topFunction()" id="upHere" title="Go to top">↑</button>
-        </aside>
-        <script src="js/button.js"></script>
+        <script src="js/photoslider.js" defer></script>
         <footer class="dungeon">
             <div class="dungeon__text">
                 <span>
