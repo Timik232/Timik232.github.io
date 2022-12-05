@@ -61,4 +61,8 @@
   .itsme{
     font-size: 1.5em;
   }
+  @media screen and (max-width:280px){
+    .itsme{
+      font-size: 1em;
+    }
 }
