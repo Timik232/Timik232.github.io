@@ -36,6 +36,9 @@
 li{
   text-align: center;
 }
+.flex-grow{
+  flex-grow: 1;
+}
 #send input{
   text-align: center;
 }

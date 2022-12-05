@@ -62,7 +62,7 @@
   .main{
     margin-bottom: 0;
   }
-  @media screen and (max-width:365px){
+  @media screen and (max-width:335px){
     .reports{
       overflow: scroll;
     }
