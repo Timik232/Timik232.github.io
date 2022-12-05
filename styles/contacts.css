@@ -317,7 +317,7 @@ fieldset{
 #turnoff:hover{
   background: rgba(255, 255, 255, 0.4);
 }
-@media screen and (max-width:365px){
+@media screen and (max-width:360px){
   .textbox{
     overflow: scroll;
   }
