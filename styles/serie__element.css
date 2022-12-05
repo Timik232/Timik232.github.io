@@ -3,7 +3,7 @@
 	overflow:hidden;
 	margin:2em auto;
 }
-#main-slider{
+#grid-slider{
 	width:100%;
 	display: grid;
 	grid-template-columns: 60px auto 60px;
@@ -38,20 +38,12 @@
 	width: 40px;
 }
 
-.slider-nav {
-	position:absolute;
-	top:0;
-	left:10%;
-	height: 100%;
-	width:100%;
-	padding-left: 50px;
-	padding-right: 50px;
-}
-button img{
+
+.vertline button img{
 	filter: invert();
 
 }
-button {
+.vertline button {
 	transition: 0.5s ease-in-out;
 	box-shadow: 1px 1px 0px 100vmax rgb(0, 0, 0,0.0) inset;
 	border:none;
@@ -65,17 +57,65 @@ button {
 	z-index: 5;
 	border-radius: 2em;
 }
-button:hover{
+.vertline button:hover{
 	box-shadow: 1px 1px 0px 100vmax rgb(0, 0, 0,0.1) inset;
 }
 
-button:focus {
+.vertline button:focus {
 	outline-style:none;
 }
-button.slider-previous {
+.vertline button.slider-previous {
   display:none;
 }
-
+@media screen and (max-width:666px){
+	#grid-slider{
+		grid-template-columns: 40px auto 40px;
+		transform: translateX(-2%);
+	}
+	.vertline button{
+		width: 40px;
+	}
+	.vertline button:hover{
+		box-shadow: 1px 1px 0px 0vmax rgb(0, 0, 0,0.0) inset;
+	}
+}
+@media screen and (max-width:400px){
+	#grid-slider{
+		transform: translateX(-7%);
+	}
+}
+@media screen and (max-width:280px){
+	#grid-slider{
+		transform: translateX(-12%);
+	}
+}
+#slider-nav {
+    position: relative;
+    /* bottom: -36px; */
+    text-align: center;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+}
+#slider-nav button {
+    width: 2em;
+    height: 1em;
+    text-decoration: none;
+		border: 1px solid rgba(255,255,255,0.3);
+	  border-right: 1px solid rgba(255,255,255,0.2);
+	  border-bottom: 1px solid rgba(255,255,255,0.2);
+	  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    /* border-radius: 50%; */
+    margin: 0 5px;
+    background-color: rgba(#fafafa, 0.5);
+		opacity: 0.8;
+		cursor: pointer;
+		border-radius: 1em;
+}
+#slider-nav button.current {
+    background-color: #337ab7;
+}
 
 .main{
   margin-bottom: 2.5em;
@@ -91,33 +131,11 @@ h1 {
 	line-height: 1.2em;
 	letter-spacing: 1px;
 	font-size: 2em;
-	margin-bottom: 1em;
   text-shadow: 1px 1px 3px black;
 	text-align: center;
 	color: var(--textcol)
 }
-@media screen and (max-width:666px){
-	#main-slider{
-		grid-template-columns: 40px auto 40px;
-		transform: translateX(-2%);
-	}
-	button{
-		width: 40px;
-	}
-	button:hover{
-		box-shadow: 1px 1px 0px 100vmax rgb(0, 0, 0,0.0) inset;
-	}
-}
-@media screen and (max-width:400px){
-	#main-slider{
-		transform: translateX(-7%);
-	}
-}
-@media screen and (max-width:280px){
-	#main-slider{
-		transform: translateX(-12%);
-	}
-}
+
 .serie1{
 --textcol:#f66d52;
 --grad: rgba(51, 41, 31, 0.7);

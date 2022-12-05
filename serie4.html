@@ -75,22 +75,31 @@
           <article>
             <h1 class="serie4">Потешный <span> кот</span></h1>
             <div id="main-slider">
-              <div class="vertline">
-                <button class="slider-previous" ><img src="images/left.svg" alt="left"></button>
-              </div>
-              <div class="slider">
-              <div class="slider-wrapper">
-              		<img src="images/serie4/cat1.jpg" alt="cat1" class="slide"/>
-              		<img src="images/serie4/cat2.jpg" alt="cat2" class="slide"/>
-              		<img src="images/serie4/cat3.jpg" alt="cat3" class="slide"/>
-                  <img src="images/serie4/cat4.jpg" alt="cat4" class="slide"/>
-                  <img src="images/serie4/cat5.jpg" alt="cat5" class="slide"/>
-              	</div>
-              </div>
+              <div id="grid-slider">
                 <div class="vertline">
-                  <button class="slider-next" ><img src="images/right.svg" alt="left"></button>
+                  <button class="slider-previous" ><img src="images/left.svg" alt="left"></button>
                 </div>
+                <div class="slider">
+                <div class="slider-wrapper">
+                		<img src="images/serie4/cat1.jpg" alt="cat1" class="slide"/>
+                		<img src="images/serie4/cat2.jpg" alt="cat2" class="slide"/>
+                		<img src="images/serie4/cat3.jpg" alt="cat3" class="slide"/>
+                    <img src="images/serie4/cat4.jpg" alt="cat4" class="slide"/>
+                    <img src="images/serie4/cat5.jpg" alt="cat5" class="slide"/>
+                	</div>
+                </div>
+                  <div class="vertline">
+                    <button class="slider-next" ><img src="images/right.svg" alt="left"></button>
+                  </div>
               </div>
+              <div id="slider-nav">
+                  <button data-slide="0" class="current"></button>
+                  <button data-slide="1"></button>
+                  <button data-slide="2"></button>
+                  <button data-slide="3"></button>
+                  <button data-slide="4"></button>
+              </div>
+            </div>
             </article>
         </main>
         <script src="js/photoslider.js" defer></script>
