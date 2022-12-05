@@ -16,6 +16,7 @@
 			this.actions();
 			this.stopStart();
 			this.show();
+			this.isInit = false;
 		},
 		_slideTo: function(slide) {
 			var currentSlide = this.slides[slide];
@@ -62,6 +63,10 @@
 		},
 		actions: function() {
 			var self = this;
+			if (!this.isInit){
+			this.wrapper.style.left = "-" + 0 + "px";
+			this.isInit = true;
+		}
 			self.next.addEventListener("click", function() {
 				let cur = document.querySelector('#slider-nav button.current')
 				cur.classList.remove('current');
