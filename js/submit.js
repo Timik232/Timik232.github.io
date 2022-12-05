@@ -13,10 +13,11 @@ turnoff.addEventListener("click", () => {
   if (!isTurn){
     box.style.visibility = "hidden";
     isTurn = true;
+    turnoff.textContent = "Включить эффекты"
   }
   else {
     box.style.visibility = "visible";
-
+    turnoff.textContent = "Выключить эффекты"
     isTurn = false;
   }
 });
