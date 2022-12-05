@@ -93,12 +93,11 @@ h1 {
 	#grid-slider{
 		transform: translateX(-7%);
 	}
-}
-@media screen and (max-width:349px){
 	h1{
 		font-size:1em;
 	}
 }
+
 @media screen and (max-width:280px){
 	#grid-slider{
 		transform: translateX(-12%);
