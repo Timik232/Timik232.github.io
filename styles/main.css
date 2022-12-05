@@ -680,7 +680,7 @@ animation-fill-mode: forwards;
 #upHere:hover {
   background: rgba(255, 255, 255, 1);
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 810px){
 
 .shapka__blocks{
   visibility: hidden;
