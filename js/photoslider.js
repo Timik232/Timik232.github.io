@@ -48,17 +48,17 @@
 		},
 		show: function(){
 			var self = this;
-			self.timer = setInterval(function() {
-				let cur = document.querySelector('#slider-nav button.current')
-				cur.classList.remove('current');
-				self.index++;
-				if( self.index == self.slides.length ) {
-					self.index = 0;
-				}
-				cur = document.querySelector(`[data-slide="${self.index}"]`);
-				cur.classList.add('current');
-				self._slideTo( self.index );
-			}, 5000);
+			// self.timer = setInterval(function() {
+			// 	let cur = document.querySelector('#slider-nav button.current')
+			// 	cur.classList.remove('current');
+			// 	self.index++;
+			// 	if( self.index == self.slides.length ) {
+			// 		self.index = 0;
+			// 	}
+			// 	cur = document.querySelector(`[data-slide="${self.index}"]`);
+			// 	cur.classList.add('current');
+			// 	self._slideTo( self.index );
+			// }, 5000);
 		},
 		actions: function() {
 			var self = this;

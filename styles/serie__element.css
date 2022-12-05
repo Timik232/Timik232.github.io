@@ -67,7 +67,7 @@
 .vertline button.slider-previous {
   display:none;
 }
-@media screen and (max-width:666px){
+@media screen and (max-width:800px){
 	#grid-slider{
 		grid-template-columns: 40px auto 40px;
 		transform: translateX(-2%);
