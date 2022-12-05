@@ -67,6 +67,15 @@
 .vertline button.slider-previous {
   display:none;
 }
+h1 {
+	line-height: 1.2em;
+	letter-spacing: 1px;
+	font-size: 2em;
+  text-shadow: 1px 1px 3px black;
+	text-align: center;
+	color: var(--textcol)
+}
+
 @media screen and (max-width:800px){
 	#grid-slider{
 		grid-template-columns: 40px auto 40px;
@@ -80,8 +89,14 @@
 	}
 }
 @media screen and (max-width:400px){
+
 	#grid-slider{
 		transform: translateX(-7%);
+	}
+}
+@media screen and (max-width:349px){
+	h1{
+		font-size:1em;
 	}
 }
 @media screen and (max-width:280px){
@@ -125,15 +140,6 @@
 }
 .slider-wrapper{
 	border-radius: 2em;
-}
-h1 {
-	word-break: break-all;
-	line-height: 1.2em;
-	letter-spacing: 1px;
-	font-size: 2em;
-  text-shadow: 1px 1px 3px black;
-	text-align: center;
-	color: var(--textcol)
 }
 
 .serie1{
