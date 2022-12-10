@@ -37,57 +37,60 @@
 			}
 		},
 		stopStart: function() {
-			this.el.addEventListener( "mouseover", function() {
-				clearInterval( this.timer );
-				this.timer = null;
+			var self = this;
+			self.el.addEventListener( "mouseover", function() {
+				clearInterval( self.timer );
+				self.timer = null;
 
 			}, false);
-			this.el.addEventListener( "mouseout", function() {
-				this.show();
+			self.el.addEventListener( "mouseout", function() {
+				self.show();
 			}, false);
 		},
 		show: function(){
-			// this.timer = setInterval(function() {
+			var self = this;
+			// self.timer = setInterval(function() {
 			// 	let cur = document.querySelector('#slider-nav button.current')
 			// 	cur.classList.remove('current');
-			// 	this.index++;
-			// 	if( this.index == this.slides.length ) {
-			// 		this.index = 0;
+			// 	self.index++;
+			// 	if( self.index == self.slides.length ) {
+			// 		self.index = 0;
 			// 	}
-			// 	cur = document.querySelector(`[data-slide="${this.index}"]`);
+			// 	cur = document.querySelector(`[data-slide="${self.index}"]`);
 			// 	cur.classList.add('current');
-			// 	this._slideTo( this.index );
+			// 	self._slideTo( self.index );
 			// }, 5000);
 		},
 		actions: function() {
+			var self = this;
 			if (!this.isInit){
 			this.wrapper.style.left = "-" + 0 + "px";
 			this.isInit = true;
 		}
-			this.next.addEventListener("click", function() {
+			self.next.addEventListener("click", function() {
 				let cur = document.querySelector('#slider-nav button.current')
 				cur.classList.remove('current');
-				this.index++;
-				cur = document.querySelector(`[data-slide="${this.index}"]`);
+				self.index++;
+				cur = document.querySelector(`[data-slide="${self.index}"]`);
 				cur.classList.add('current');
-				this._slideTo(this.index);
+				self._slideTo(self.index);
 			}, false);
-			this.previous.addEventListener("click", function() {
+			self.previous.addEventListener("click", function() {
 				let cur = document.querySelector('#slider-nav button.current')
 				cur.classList.remove('current');
-				this.index--;
-				cur = document.querySelector(`[data-slide="${this.index}"]`);
+				self.index--;
+				cur = document.querySelector(`[data-slide="${self.index}"]`);
 				cur.classList.add('current');
-				this._slideTo(this.index);
+				self._slideTo(self.index);
 			}, false);
-			for (let i = 0; i < this.links.length; i++){
-					this.links[i].addEventListener("click", function() {
+			for (let i = 0; i < self.links.length; i++){
+				self.links[i].addEventListener("click", function() {
 					let cur = document.querySelector('#slider-nav button.current')
 					cur.classList.remove('current');
-					this.links[i].classList.add('current');
-					this.index = i;
+					self.links[i].classList.add('current');
+					self.index = i;
 
-					this._slideTo(this.index);
+					self._slideTo(self.index);
 				});
 			}
 		}
