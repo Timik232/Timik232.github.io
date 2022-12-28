@@ -14,8 +14,6 @@
 			this.timer = null;
 			this.total = this.slides.length;
 			this.actions();
-			this.stopStart();
-			this.show();
 			this.isInit = false;
 		},
 		_slideTo: function(slide) {
@@ -35,31 +33,6 @@
 			else {
 				this.previous.style.display = "block";
 			}
-		},
-		stopStart: function() {
-			var self = this;
-			self.el.addEventListener( "mouseover", function() {
-				clearInterval( self.timer );
-				self.timer = null;
-
-			}, false);
-			self.el.addEventListener( "mouseout", function() {
-				self.show();
-			}, false);
-		},
-		show: function(){
-			var self = this;
-			// self.timer = setInterval(function() {
-			// 	let cur = document.querySelector('#slider-nav button.current')
-			// 	cur.classList.remove('current');
-			// 	self.index++;
-			// 	if( self.index == self.slides.length ) {
-			// 		self.index = 0;
-			// 	}
-			// 	cur = document.querySelector(`[data-slide="${self.index}"]`);
-			// 	cur.classList.add('current');
-			// 	self._slideTo( self.index );
-			// }, 5000);
 		},
 		actions: function() {
 			var self = this;
